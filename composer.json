@@ -1,8 +1,14 @@
 {
     "name": "ajgl/php-codesniffer-autoload-test",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://github.com/ajgarlag/PHP_CodeSniffer"
+        }
+    ],
     "require-dev": {
         "phing/phing": "dev-master",
-        "squizlabs/php_codesniffer": "dev-master"
+        "squizlabs/php_codesniffer": "dev-composer"
     },
     "authors": [
         {

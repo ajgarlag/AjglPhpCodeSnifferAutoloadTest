@@ -1,6 +1,9 @@
 Instructions
 ============
 
+master branch
+-------------
+
 You can test it running:
 
 ```
@@ -17,3 +20,14 @@ BUILD FAILED
 /tmp/lala/build.xml:13:41: This task requires the PHP_CodeSniffer package installed and available on the include path 
 ```
 
+
+composer branch
+---------------
+
+You can test it running:
+
+```    
+curl -s https://getcomposer.org/installer | php && php composer.phar update --dev && vendor/bin/phing
+```
+
+Here you can see everything working.
