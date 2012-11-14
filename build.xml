@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Ajgl\OpenUrl" default="build" basedir=".">
+    <property name="lib" value="lib"/>
+    <property name="checkTestsDir" value="false" />
+
+    <fileset dir="${project.basedir}" id="libsrc">
+        <include name="${lib}/**/*.php" />
+    </fileset>
+
+    <target name="phpcs">
+        <echo msg="Generating checkstyle report with PHP_CodeSniffer" />
+        <phpcodesniffer skipversioncheck="true">
+            <fileset refid="libsrc"/>
+            <formatter type="summary" usefile="false"/>
+        </phpcodesniffer>
+    </target>
+
+    <target name="build" depends="phpcs" />
+    
+</project>

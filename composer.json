@@ -1,0 +1,21 @@
+{
+    "name": "ajgl/php-codesniffer-autoload-test",
+    "require-dev": {
+        "phing/phing": "dev-master",
+        "squizlabs/php_codesniffer": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Antonio J. García Lagar",
+            "email": "aj@garcialagar.es"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-0": {
+            "Ajgl": "lib/"
+        }
+    }
+}
